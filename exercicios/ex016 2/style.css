@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+*{
+    height: 100%;
+}
+body {
+    background-image: linear-gradient(to top, #F001AA, #AA00E6, #9406FA, #6E01F0);
+    background-attachment: fixed;
+}
+h1{
+    color: whitesmoke;
+}

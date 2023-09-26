@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="file:///C:/Users/Kaulitz/Desktop/HTML5%20CSS3/ex004/semana%20de%20provas2%20-%20Copia.png" type="image/x-icon">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em dispositivos diferentes ou diminua o zoom do seu computador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo aúdio</h1>
+    <h2>Maneira simples</h2>
+    <audio src="midia/guanacast-33.mp3" controls ></audio>
+
+    <h2>Mais compatibilidade</h2>
+    <audio preload="metadata" autoplay controls loop></audio>
+        <source src="midia/lesly.mp3" type="audio/mpeg">
+        <source src="midia/lesly.ogg" type="audio/ogg">
+        <source src="midia/lesly.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir o audio. <a href="midia/lesly.mp3" download="lesly.mp3" target="_blank" rel="external">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+</body>
+</html>
