@@ -35,11 +35,12 @@ header > h1{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.61);
 }
 header > p{
-    font-size: 1.3em;
+    font-size: 1.6em;
     max-width: 600px;
     text-align: center;
+    padding-top: 30px;
     padding-bottom: 50px;
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-destaque);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.61);
     margin: auto;
 }
@@ -51,6 +52,8 @@ nav {
     box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
 }
 nav > a{
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
     color: black;
     padding: 10px;
     border-radius: 5px;
@@ -61,12 +64,14 @@ nav > a:hover{
     background-color: var(--cor002);
     color: var(--cor001);
 }
-h1{
+.aspv{
+    color: var(--cor002);
     font-family: var(--fonte-destaque);
     font-size: 2.5em;
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
+    text-shadow: 0px 0px 0px white;
 }
 
 .hc {
