@@ -30,7 +30,7 @@ header {
 }
 header > h1{
     font-size: 5em;
-    margin-bottom: 40px;
+    margin-bottom: 2px;
     font-family: 'Major Mono Display', monospace;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.61);
 }
@@ -55,7 +55,7 @@ nav > a{
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    transition-duration: 0.5;
+    transition-duration: 0.5s;
 }
 nav > a:hover{
     background-color: var(--cor002);
@@ -66,6 +66,7 @@ h1{
     font-size: 2.5em;
     padding-top: 20px;
     padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 .hc {
@@ -82,6 +83,11 @@ h1{
 .hc > a > h2 {
     font-family: var(--fonte-destaque);
     color: var(--cor002);
+    transition-duration: 0.5s;
+}
+.hc > a:hover > h2{
+    background-color: var(--cor002);
+    color: var(--cor001);
 }
 .hc > h3{
     font-family: var(--fonte-destaque);
@@ -96,16 +102,82 @@ h1{
     text-align: center;
     font-size: 1.3em;
 }
+.wmgw > a{
+    text-decoration: none;
+}
+.wmgw > a > h2 {
+    padding-top: 5px;
+    font-family: var(--fonte-destaque);
+    color: var(--cor001);
+    transition-duration: 0.5s;
+}
+.wmgw > a:hover > h2{
+    background-color: var(--cor001);
+    color: var(--cor002);
+}
+.wmgw > h3 {
+    color: var(--cor002);
+    font-family: var(--fonte-destaque);
+
+}
+.wmgw > p {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
 .g {
     background-color: var(--cor001);
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
     color: black;    
     text-align: center;
     font-size: 1.3em;
     margin: auto;
 }
+.g > a {
+    text-decoration: none;
+    color: var(--cor002);
+    font-family: var(--fonte-destaque);
+}
+.g > a > h2 {
+    transition-duration: 0.5s;
+}
+.g > a:hover > h2{
+    background-color: var(--cor002);
+    color: var(--cor001);
+}
+.g > h3 {
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
+    font-family: var(--fonte-destaque);
+}
+.g > p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .my {
     text-align: center;
     font-size: 1.3em;
+}
+.my > a {
+    text-decoration: none;
+}
+.my > a > h2{
+    padding-top: 5px;
+    font-family: var(--fonte-destaque);
+    color: var(--cor001);
+    transition-duration: 0.5s;
+}
+.my > a:hover > h2{
+    background-color: var(--cor001);
+    color: var(--cor002);
+}
+.my > h3 {
+    color: var(--cor002);
+    font-family: var(--fonte-destaque);
+}
+.my > p{
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 .ld {
     background-color: var(--cor001);
@@ -113,5 +185,33 @@ h1{
     text-align: center;
     font-size: 1.3em;
     margin: auto;
+}
+.ld > a {
+    text-decoration: none;
+    color: var(--cor002);
+    font-family: var(--fonte-destaque);
+}
+.ld > a > h2 {
+    transition-duration: 0.5s;
+}
+.ld > a:hover > h2{
+    background-color: var(--cor002);
+    color: var(--cor001);
+}
+.ld> h3 {
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.479);
+    font-family: var(--fonte-destaque);
+}
+.ld> p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
