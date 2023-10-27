@@ -19,6 +19,7 @@
 html, body {
     min-height: 100%;
     background-color: black;
+    font-family: var(--fonte-padrao);
 }
 
 header {
@@ -28,22 +29,54 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte-titulo);
+    font-size: 5em;
 }
 header > p {
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.2em;
 }
 
 nav {
     text-align: center;
+    font-size: 1.3em;
 }
-nav > a {
+nav > a, footer a {
     color: var(--cor001);
     text-decoration: none;
     text-align: center;
     padding: 10px;
     transition-duration: 0.5s;
+    font-family: var(--fonte-destaque);
 }
 nav > a:hover, footer a:hover {
+    background-color: var(--cor002);
+    color: var(--cor001);
+    border-radius: 5px;
+}
+
+.normal a {
+    color: var(--cor003);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    transition-duration: 0.5s;
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+}
+
+.imagem a {
+    color: var(--cor001);
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    transition-duration: 0.5s;
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+}
+
+.normal a:hover, .imagem a:hover {
     background-color: var(--cor002);
     color: var(--cor001);
     border-radius: 5px;
@@ -52,6 +85,8 @@ nav > a:hover, footer a:hover {
 h2 {
     color: var(--cor001);
     padding: 20px;
+    font-family: var(--fonte-destaque);
+    font-size: 2.2em;
 }
 
 section {
@@ -59,25 +94,33 @@ section {
     padding-bottom: 2%;
     line-height: 1.5em;
     text-align: center;
+    font-size: 1.1em;
 }
+
 section.normal {
     background-color: var(--cor001);
     color: var(--cor003);
 }
+
 section.imagem {
     background-color: rgb(122, 121, 121);
     color: var(--cor001);
 }
 section.imagem > p {
+    display: inline-block;
     width: 400px;
     background-color: rgba(0, 0, 0, 0.438);
+    padding: 5px;
+    border-radius: 5px;
     margin: auto;
 }
+
 footer {
     background-color: var(--cor003);
     color: var(--cor001);
     text-align: center;
     padding: 10px;
+    font-size: 1.2em;
 }
 footer > p > a {
     text-decoration: none;
