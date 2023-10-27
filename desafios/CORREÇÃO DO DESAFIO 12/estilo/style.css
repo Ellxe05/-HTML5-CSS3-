@@ -4,7 +4,8 @@
 
 :root {
     --cor001: white; 
-    --cor002: #6b100d; 
+    --cor002: #6b100d;
+    --cor003: black; 
 
     --fonte-padrao: arial, verdana, helvetica;
     --fonte-destaque:'Bebas Neue', sans-serif;
@@ -13,4 +14,73 @@
 * {
     margin: 0px;
     padding: 0px;
+}
+
+html, body {
+    min-height: 100%;
+    background-color: black;
+}
+
+header {
+    color: var(--cor001);
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p {
+    padding-bottom: 50px;
+}
+
+nav {
+    text-align: center;
+}
+nav > a {
+    color: var(--cor001);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    transition-duration: 0.5s;
+}
+nav > a:hover, footer a:hover {
+    background-color: var(--cor002);
+    color: var(--cor001);
+    border-radius: 5px;
+}
+
+h2 {
+    color: var(--cor001);
+    padding: 20px;
+}
+
+section {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    line-height: 1.5em;
+    text-align: center;
+}
+section.normal {
+    background-color: var(--cor001);
+    color: var(--cor003);
+}
+section.imagem {
+    background-color: rgb(122, 121, 121);
+    color: var(--cor001);
+}
+section.imagem > p {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.438);
+    margin: auto;
+}
+footer {
+    background-color: var(--cor003);
+    color: var(--cor001);
+    text-align: center;
+    padding: 10px;
+}
+footer > p > a {
+    text-decoration: none;
+    color: var(--cor001);
+
 }
