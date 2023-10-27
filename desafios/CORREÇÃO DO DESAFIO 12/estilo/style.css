@@ -18,8 +18,9 @@
 
 html, body {
     min-height: 100%;
-    background-color: black;
+    background-color: rgb(37, 37, 37);
     font-family: var(--fonte-padrao);
+
 }
 
 header {
@@ -27,15 +28,20 @@ header {
     text-align: center;
 }
 header > h1 {
+    color: var(--cor002);
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte-titulo);
     font-size: 5em;
+    text-shadow: 2px 2px 0px rgba(243, 243, 243, 0.336);
+
 }
 header > p {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 1.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.61);
+
 }
 
 nav {
@@ -83,10 +89,13 @@ nav > a:hover, footer a:hover {
 }
 
 h2 {
-    color: var(--cor001);
+    color: var(--cor002);
     padding: 20px;
     font-family: var(--fonte-destaque);
     font-size: 2.2em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.527);
+    text-align: center;
+
 }
 
 section {
@@ -105,6 +114,8 @@ section.normal {
 section.imagem {
     background-color: rgb(122, 121, 121);
     color: var(--cor001);
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
 }
 section.imagem > p {
     display: inline-block;
@@ -115,6 +126,19 @@ section.imagem > p {
     margin: auto;
 }
 
+section#img001 {
+    background-image: url('../imagens/show004.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#img002 {
+    background-image: url('../imagens/guitarra002.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 footer {
     background-color: var(--cor003);
     color: var(--cor001);
